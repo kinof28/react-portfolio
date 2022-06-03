@@ -22,6 +22,7 @@ const Footer = () => {
                 href="https://github.com/kinof28"
                 style={{ color: "white" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <AiFillGithub />
               </a>
@@ -31,6 +32,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/abdelwahab-hamadouche-415161231/"
                 style={{ color: "white" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
@@ -40,6 +42,7 @@ const Footer = () => {
                 href="https://www.facebook.com/abdelwahab.hamadouche"
                 style={{ color: "white" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <AiFillFacebook />
               </a>
