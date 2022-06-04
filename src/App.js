@@ -17,16 +17,13 @@ import NotFound from "./components/common/NotFound";
 function App() {
   return (
     <>
-      {/* <Background /> */}
+      {/* <Background className="back" /> */}
       <Header />
-      <Background className="back" />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resume />} />
-        {/* <Route path="background" element={<Background />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
