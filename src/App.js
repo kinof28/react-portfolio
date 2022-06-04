@@ -11,21 +11,24 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import About from "./components/About/About";
-import Background from "./components/common/Background";
+// import Background from "./components/common/Background";
 import NotFound from "./components/common/NotFound";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <>
       {/* <Background className="back" /> */}
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="about" element={<About />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Container fluid className="home-section" id="home">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Container>
       <Footer />
     </>
   );
