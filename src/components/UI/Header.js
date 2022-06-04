@@ -6,15 +6,15 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/logo2.png";
 import Button from "react-bootstrap/Button";
-// import { NavbarBrand } from "react-bootstrap";
+
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
 
 import "./Header.css";
 
@@ -40,12 +40,7 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand>
-          <img
-            src={logo}
-            // className="img-fluid logo"
-            alt="abdelwahab Dev"
-            width="150"
-          />
+          <img src={logo} alt="abdelwahab Dev" width="150" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -93,7 +88,7 @@ const Header = () => {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                {/* <CgFileDocument style={{ marginBottom: "2px" }} /> Resume */}
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
