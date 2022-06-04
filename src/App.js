@@ -11,7 +11,7 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import About from "./components/About/About";
-// import Background from "./components/common/Background";
+import Background from "./components/common/Background";
 import NotFound from "./components/common/NotFound";
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
     <>
       {/* <Background /> */}
       <Header />
+      <Background className="back" />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />

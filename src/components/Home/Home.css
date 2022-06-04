@@ -50,12 +50,7 @@
   
   .home-section {
     position: relative;
-    z-index: -1;
-    background: #131313;
 
-    /* background-image: var(--image-gradient), url(../../assets/home-bg.jpg); */
-    /* background-position: top center; */
-    /* background-repeat: no-repeat; */
     padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
@@ -65,7 +60,9 @@
     color: whitesmoke;
     text-align: left;
   }
-  
+  .back{
+    z-index: -1;
+  }
   .heading {
     color:rgba(198,201,216,.75);
     font-family: "Poppins",sans-serif !important;
