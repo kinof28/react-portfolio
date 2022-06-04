@@ -85,7 +85,7 @@ const About = () => {
             <SiGit title="Git" />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <SiCplusplus title="G++" />
+            <SiCplusplus title="C++" />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <DiNodejs />
