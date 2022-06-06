@@ -88,7 +88,7 @@ const Projects = () => {
             justifyContent: "center",
           }}
         >
-          <div className="deconstructed">
+          <div className="deconstructed ">
             <div>MY RECENT WORKS</div>
             <div>MY RECENT WORKS</div>
             <div>MY RECENT WORKS</div>
