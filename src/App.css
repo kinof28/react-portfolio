@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.content-container {
+  min-height: 100% !important;
+}
+/* .content-inside {
+  padding: 0px 0px 50px;
+} */
 
 .App-logo {
   height: 40vmin;

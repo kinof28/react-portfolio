@@ -11,14 +11,16 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import About from "./components/About/About";
-// import Background from "./components/common/Background";
+import Background from "./components/common/Background";
 import NotFound from "./components/common/NotFound";
 import { Container } from "react-bootstrap";
+import Helmet from "./components/common/Helmet";
 
 function App() {
   return (
     <>
-      {/* <Background className="back" /> */}
+      <Background className="back" />
+      <Helmet />
       <Header />
       <Container fluid className="home-section" id="home">
         <Routes>

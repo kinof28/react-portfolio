@@ -53,6 +53,7 @@
 
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  min-height: 93vh;
 }
 @media (max-width: 767px) {
   .home-section {
