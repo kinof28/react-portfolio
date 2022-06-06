@@ -34,7 +34,7 @@ const About = () => {
           <Col md={7} className="about-description-container">
             <div className="neons">
               <h3>LET ME INTRODUCE MYSELF</h3>
-              <p className="about-description">
+              <p className="about-description" style={{ textAlign: "justify" }}>
                 Since beginning my journey nearly 2 years ago, I've done remote
                 work for agencies and collaborated with talented people to
                 create digital content for both business and consumer use. I'm
@@ -45,50 +45,50 @@ const About = () => {
           </Col>
         </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiJava title="Java" />
+          <Col xs={4} md={2} className="tech-icons" title="Java/JavaEE">
+            <SiJava title="Java/JavaEE" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="JavaScript">
             <SiJavascript title="JavaScript" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="TypeScrypt">
             <SiTypescript title="TypeScrypt" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="React">
             <SiReact title="React" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiRedux title="Redux" />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiReactivex title="RxJs" />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="Angular">
             <SiAngular title="Angular" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="SpringBoot">
             <SiSpringboot title="SpringBoot" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="Spring">
             <SiSpring title="Spring" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="Redux/NgRx">
+            <SiRedux title="Redux/NgRx" />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons" title="RxJs">
+            <SiReactivex title="RxJs" />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons" title="NestJs">
             <SiNestjs title="NestJs" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="MySQL">
             <SiMysql title="MySQL" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="PostegreSQL">
             <SiPostgresql title="PostegreSQL" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="Git">
             <SiGit title="Git" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
+          <Col xs={4} md={2} className="tech-icons" title="C++">
             <SiCplusplus title="C++" />
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiNodejs />
+          <Col xs={4} md={2} className="tech-icons" title="Node JS">
+            <DiNodejs title="Node JS" />
           </Col>
         </Row>
         <Github />
