@@ -8,8 +8,8 @@ const soSlow = { mass: 10, tension: 100, friction: 50 };
 const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`;
 const Background = () => {
   const [pos1, set] = useSpring(() => ({ pos1: [0, 0], config: fast }));
-  const [pos2, set2] = useSpring(() => ({ pos2: pos1, config: slow }));
-  const [pos3, set3] = useSpring(() => ({ pos3: pos2, config: soSlow }));
+  const [pos2, set2] = useSpring(() => ({ pos2: [0, 0], config: slow }));
+  const [pos3, set3] = useSpring(() => ({ pos3: [0, 0], config: soSlow }));
 
   useEffect(() => {
     const handler = ({ clientX, clientY }) => {
@@ -18,7 +18,6 @@ const Background = () => {
       set3({ pos3: [clientX, clientY] });
     };
     window.addEventListener("mousemove", handler);
-    return () => window.removeEventListener("mousemove", handler);
   }, [set, set2, set3]);
   return (
     <div className="background">
