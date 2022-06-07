@@ -2,9 +2,10 @@
   margin-top: 3rem;
   color: white;
   text-align: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  /* padding-left: 5vw;
+  padding-right: 5vw; */
 }
+
 .form-header {
   font-size: x-large;
   font-weight: 900;
@@ -20,4 +21,14 @@
 .form-control {
   background: transparent;
   color: white !important;
+}
+.i-frame {
+  width: 100%;
+  height: 920px;
+}
+
+@media (max-width: 767px) {
+  .i-frame {
+    height: 1065px;
+  }
 }
