@@ -11,16 +11,17 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import About from "./components/About/About";
-import Background from "./components/common/Background";
+// import Background from "./components/common/Background";
 import NotFound from "./components/common/NotFound";
 import { Container } from "react-bootstrap";
-import Helmet from "./components/common/Helmet";
+// import Helmet from "./components/common/Helmet";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
     <>
-      <Background className="back" />
-      <Helmet />
+      {/* <Background className="back" /> */}
+      {/* <Helmet /> */}
       <Header />
       <Container fluid className="home-section" id="home">
         <Routes>
@@ -28,6 +29,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>

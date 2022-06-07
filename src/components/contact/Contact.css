@@ -1,0 +1,23 @@
+.contact-section {
+  margin-top: 3rem;
+  color: white;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.form-header {
+  font-size: x-large;
+  font-weight: 900;
+}
+.form-control:active,
+.form-control:focus,
+.form-control:not(:placeholder-shown),
+.form-control:focus:active {
+  background-color: transparent !important;
+  border-color: #9434d4;
+  color: white;
+}
+.form-control {
+  background: transparent;
+  color: white !important;
+}

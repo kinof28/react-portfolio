@@ -17,6 +17,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 import "./Header.css";
+import { SiGooglemessages } from "react-icons/si";
 
 const Header = () => {
   const [expand, updateExpanded] = useState(false);
@@ -88,7 +89,17 @@ const Header = () => {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} />
+                Resume
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <SiGooglemessages style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
