@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* background: #131313; */
   background: radial-gradient(circle, #4f2f86, #2d1950, #1a0441, #000);
 }
 
@@ -37,7 +35,9 @@ html {
 button:focus {
   box-shadow: none !important;
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: #2d1950;
