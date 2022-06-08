@@ -23,7 +23,7 @@ this portfolio contains:
 
 Just clone the repository and run 
 ### npm install 
-If u had a problem with installing dependencies just run npm install --legacy-peer-deps and that should be it <br />
+If u had a problem with installing dependencies just run : <br /> npm install --legacy-peer-deps  <br /> and that should be it <br />
 after that run 
 ### npm start
 and it should be runing on ur local server on port 3000 as any usual react application 
