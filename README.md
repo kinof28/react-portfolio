@@ -4,6 +4,8 @@
 
 This project was created by React , front-end framwork and without typescipt this is javascript react application 
 <br />
+this portfolio contains some animations by react spring and css usual animation
+<br />
 and it is totaly static web site so u can deploy it on netlify as i did or github or any static web server 
 <br />
 it is static cause I don't want to pay for it to be alive  😅 😅
@@ -11,13 +13,18 @@ it is static cause I don't want to pay for it to be alive  😅 😅
 ## Pages
 this portfolio contains:
 ### Home Page
-////// screen shot should be here
+![home page](./screenshots/home-page.png)
 ### About Page
-////// screen shot should be here
+![about page](./screenshots/about-page.png)
+![about page part 2](./screenshots/about-page2.png)
 ### Projects Page
-////// screen shot should be here
+![project page](./screenshots/projects-page.png)
+### Resume Page
+![resume page](./screenshots/resume-page.png)
 ### Contact Page
-////// screen shot should be here
+![contact page](./screenshots/contact-page.png)
+### 404 not found Page
+![not found page](./screenshots/not-found-page.png)
 
 ## How to use it
 
