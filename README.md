@@ -39,7 +39,7 @@ and it should be runing on ur local server on port 3000 as any usual react appli
 
 to use for personal website just change the name and links and the list of projects since it is a static datastructure 
 and give me a star  😌  <br />
-Don't forget to put your own google form iframe 😑
+Don't forget to put your own form informations 😑
 
 <br /> 
 that's all have fun 😉😉
