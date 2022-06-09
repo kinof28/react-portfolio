@@ -32,3 +32,16 @@
     height: 1065px;
   }
 }
+.error {
+  font-size: 12px;
+  color: rgb(219, 82, 82);
+  margin-top: 0.25rem;
+}
+.success {
+  font-size: large;
+  color: green;
+}
+.fail {
+  font-size: large;
+  color: rgb(219, 82, 82);
+}
