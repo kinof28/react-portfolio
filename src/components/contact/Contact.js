@@ -1,8 +1,8 @@
 import { useFormik } from "formik";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import { Container, Form, Row, Col, Button } from "react-bootstrap";
+import { Container, Form, Row, Col, Button, Spinner } from "react-bootstrap";
 import "./Contact.css";
 const validate = (values) => {
   const errors = {};
@@ -27,8 +27,8 @@ const validate = (values) => {
   return errors;
 };
 const Contact = () => {
-  const form = useRef();
   const [result, setResult] = useState("");
+  const [pending, setPending] = useState(false);
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -38,24 +38,25 @@ const Contact = () => {
     },
     validate,
     onSubmit: (values) => {
+      setPending(true);
       console.log("form submited !! with values : ", values);
-      // e.preventDefault();
-
       emailjs
-        .sendForm(
+        .send(
           "service_srjggxu",
           "template_4ducf0e",
-          form.current,
+          values,
           "bG4LCZKFw1g_E6DuX"
         )
         .then(
           (result) => {
+            setPending(false);
             console.log(result.text);
             setResult(
               <div className="success">message was sent succesfuly</div>
             );
           },
           (error) => {
+            setPending(false);
             setResult(
               <div className="fail">
                 some thing went wrong , <br /> message was not sent , please try
@@ -83,7 +84,7 @@ const Contact = () => {
             justifyContent: "center",
           }}
         >
-          <Form onSubmit={formik.handleSubmit} ref={form}>
+          <Form onSubmit={formik.handleSubmit}>
             <Row>
               <Col>
                 <Form.Control
@@ -148,8 +149,16 @@ const Contact = () => {
                   variant="primary"
                   type="submit"
                   style={{ width: "150px" }}
+                  disabled={pending}
                 >
-                  send
+                  {pending && (
+                    <Spinner
+                      style={{ height: "20px", width: "20px" }}
+                      animation="border"
+                      variant="info"
+                    />
+                  )}
+                  &nbsp; Send
                 </Button>
               </Col>
             </Row>
