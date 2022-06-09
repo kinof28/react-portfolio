@@ -36,7 +36,7 @@ after that run
 and it should be runing on ur local server on port 3000 as any usual react application 
 
 ## Copyright
-
+this website was designed and developed by me Abdelwahab Hamadouche <br />
 to use for personal website just change the name and links and the list of projects since it is a static datastructure 
 and give me a star  😌  <br />
 Don't forget to put your own form informations 😑
