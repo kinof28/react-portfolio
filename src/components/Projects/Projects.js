@@ -56,7 +56,7 @@ const projects = [
       "Front-end website made by angular to visualize some algorithms, for now I implemented Genetic Algorithm to solve traveling salmesman problem",
     imgPath: algorithmApp,
     repositoryLink: "https://github.com/kinof28/algorithms-application",
-    demoLink: "https://deft-medovik-e66226.netlify.app/",
+    demoLink: "https://abdelwahab-algorithms.netlify.app/",
   },
   {
     title: "Super Mario",
